@@ -1,0 +1,107 @@
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Maven Pro", sans-serif,"Montserrat", sans-serif;
+}
+
+.navbar {
+    margin-bottom: 4rem;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #e9ecef;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-badge {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    padding-left: 50px;
+}
+
+.contact-form {
+    padding: 2rem;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.timeline-card {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.timeline-card .card-header {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.timeline-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Adjust the timeline line to align with card headers */
+.timeline::after {
+    left: calc(50% - 30px);
+}
+
+@media (max-width: 767px) {
+    .timeline-content {
+        padding-left: 25px;
+    }
+
+    /* Center the timeline line for mobile */
+    .timeline::after {
+        left: 50%;
+        margin-left: -1px;
+    }
+
+    /* Full-width cards on smaller screens */
+    .timeline-card {
+        max-width: 100%;
+    }
+}
