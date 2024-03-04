@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+.container{
+    width: 40%;
+    margin: 2rem auto;
+    border: 2px solid rgba(237, 28, 167, 0.501);
+    padding: 1rem;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: honk;
+    font-size: 40px;
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#search-input{
+    margin: 0.5rem auto;
+    margin-left: 19px ;
+}
+
+.err{
+    display: none;
+    color: red;
+    background-color: rgb(240, 168, 168);
+    width: 40%;
+    margin: 0.5rem 0;
+    margin-left: 20px;
+}
+
+.task-list{
+    margin: 1.5rem 0;
+    list-style: none;
+    
+}
+
+.add-task{
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #70e622;
+    cursor: pointer;
+}
+.clear-all{
+    margin-left: 20px;
+    padding: 5px;;
+}
+
+input.disable-text{
+    margin-left: 20px;
+}
+
+/* Additional Styles */
+
+/* Style for task items */
+.task {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Style for delete and edit buttons */
+.delete-btn,
+.edit-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #dc3545;
+    color: #70e622;
+    cursor: pointer;
+}
+
+/* Hover effect for delete and edit buttons */
+.delete-btn:hover,
+.edit-btn:hover {
+    background-color: #c82333;
+}
+
+/* Style for input fields */
+input[type="text"] {
+    width: calc(100% - 20px); /* Subtract the left margin */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style for search input */
+#search-input {
+    width: calc(100% - 40px); /* Subtract the left and right margin */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style for clear all button */
+.clear-all {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Hover effect for clear all button */
+.clear-all:hover {
+    background-color: #0056b3;
+}
+
+/* Hover effect for add task button */
+.add-task:hover {
+    background-color: #0056b3;
+}
+
+
+/* Error message style */
+.err {
+    padding: 5px;
+    border: 1px solid red;
+    background-color: #fa8f98d2;
+    color: #721c24;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* Additional Styles with Animations */
+
+/* Fade in animation for task items */
+.task {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide in animation for delete and edit buttons */
+.delete-btn,
+.edit-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #dc3545;
+    color: #e9fd10;
+    cursor: pointer;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hover effect for delete and edit buttons */
+.delete-btn:hover,
+.edit-btn:hover {
+    background-color: #c82333;
+    animation: pulse 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Fade in animation for error messages */
+.err {
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #f8d7da;
+    color: #721c24;
+    animation: fadeIn 0.10s ease-in-out;
+}
+
+/* Hover effect for clear all button */
+.clear-all {
+    background-color: #007bff;
+    color: #dfcf1ed0;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    animation: bounceIn 0.10s ease-in-out;
+}
+
+
+.add-task {
+    background-color: #007bff;
+    color: #dfcf1ed0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: bounceIn 0.10s ease-in-out;
+}
+@keyframes bounceIn {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
